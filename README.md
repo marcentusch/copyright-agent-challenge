@@ -1,11 +1,18 @@
 # My solution
 
+To get started with the solution:
+`npm i && npm start`
+
 - Simplified how you select order of your colors. You now choose the order when writing the color names in the command line argument. No need for "true false true ["green", "blue", "red"]. You can also specify if you want it ordered alphabetically, reversed or just default.
 - Added argument for format: rgb or hex
 - Added argument for sync or async requests to API
 - Removed classes since i did not see the need for them
 - Simplified code a lot. Split into small pure functions that can easily be tested. At least where it was possible.
 - Added types with Typescript
+
+Would have been nice to add flags instead of just relying on order of command line arguments.
+Currently the arguments are used like this: `node out.js rgb|hex sync|async alphabetical|reverse|default red green blue black white...`
+Or just run `npm start`
 
 # code-challenge
 
